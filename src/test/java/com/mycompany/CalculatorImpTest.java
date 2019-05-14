@@ -25,13 +25,13 @@ public class CalculatorImpTest {
 
     @Test
     public void floatingPointTest() throws Exception {
-        double result =  calculator.calculate("-3000.02");
+        double result =  new CalculatorImp().calculate("-3000.02");
         assertEquals(-3000.02, result, 1e-9);
     }
     
     @Test
     public void addTest_1() throws Exception {
-        double result =  calculator.calculate("30.4/2");
+        double result =  new CalculatorImp().calculate("30.4/2");
         assertEquals(15.2, result, 1e-9);
     }
 
